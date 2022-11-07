@@ -1,0 +1,93 @@
+/* Istandsætter at der skal være 0 margner, samt 0 padding og med et specifit font til hele siden */
+
+*{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-weight: normal;
+}
+body{
+    background-color: #4a4747;
+
+    /*Header title "find os" */
+}
+h1 {
+
+    color:#ffffff;
+    position: absolute;
+    left: 630px;
+    top: 110px;
+    font-size: 45px;
+
+}
+
+/* Navigation */
+body {
+    margin: 5px;
+    padding: 5px;
+    color: #8616d5;
+    /* Background image */
+    background-image: linear-gradient(rgba(74,71,71,5),rgba(87,19,135,0.3)),url("Photo/background.jpg"); 
+    background-position: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.navbar ul{
+    text-align: center;   
+    position: fixed;
+    left: 480px; 
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s
+}
+.navbar a:hover{
+    font-size: 30px;
+    color: #8616d5;
+}
+a {
+    color: white;
+    transition: 0.2s;
+}
+a:hover {
+    font-size: 50px;
+}
+
+/* Maps */
+.container{
+    width: 60%;
+    height: 450px;
+    position:absolute;
+    left: 50px;
+    top: 250px;
+}
+/* Find os på tekst */
+h2{
+    color:#ffffff;
+    position: absolute;
+    left: 1000px;
+    top: 350px;
+    font-size: 45px;
+}
+
+
+/* find os boks */
+#rcorners1 {
+    border-radius: 15px; 
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    padding: 15px;
+    width: 350px;
+    height: 550;
+}

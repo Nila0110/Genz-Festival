@@ -1,0 +1,301 @@
+/* Istandsætter at der skal være 0 margner, samt 0 padding og med et specifit font til hele siden */
+* {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    margin: 0;
+    padding: 0;
+   
+}
+/* tekstfarverne default lilla farve, baggrund med linear gradient ovenpå, samt sat til at være centreret*/
+body {
+    color: #8616d5;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(134,22,213,0.6)),url("materialer/yvette-de-wit-NYrVisodQ2M-unsplash.jpg"); 
+    background-position: center;
+}
+/* logo opstilling */
+.logo {
+    position: absolute;
+    width: 200px;
+    cursor: pointer;
+    top: 10px;
+}
+/* nav bar position */
+nav {
+    position: absolute;
+    left: 35%;
+    top: 30px;
+}
+nav ul li {
+    /* står på en række, fremfor ned ad */
+    display: inline-block;
+    /* Hvor meget den skal gå ud fra teksten i alle 4 retninger */
+    padding: 20px;
+}
+
+nav ul li a {
+    /* miste stregerne under links */
+    text-decoration: none;
+    color: #FFF;
+    font-size: 25px;
+    /* skal være med stor skrift */
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+/* alt det der skal ske når musen bliver holdt over */
+nav ul li a:hover{
+    -webkit-text-stroke: 2px #8616d5;
+    color: transparent;
+    font-size: 30px;
+}
+/* position af videoen */
+video {
+   position: relative;
+   /* width og height bliver sat til 100%, så den ikke fylder mere end skærmens størrelse */
+   width: 100%;
+   height: 100%;
+   /* positionen indstilling for at de andre elementer kan vises foran videoen */
+    z-index: -1; 
+}
+/* position til pilene, samt størrelse */
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+/* Pilenes animation samt farve */
+.arrows path {
+	stroke: #ffffff;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+/* Får et element til at bevæge sig gradvist */
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+/* Får et element til at bevæge sig gradvist i safari eller crome */
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+/* Animaiton til pilenes funktioner opsætning */
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+/* billettens udseende, samt position på siden */
+.billet {
+    left: 42%;
+    top: 70%;
+    position: absolute;
+    background-color: white;
+    color: black;
+    font-size: 100px;
+    rotate: -10deg;
+    transition: 0.2s;
+}
+
+.billet:hover {
+    background-color: #8616d5;
+    color: white;
+    font-size: 110px;
+}
+
+/* artist nr 1 udseende, samt position på siden */
+.box1 {
+    position: absolute;
+    /* Linjeafstand i teksten */
+    line-height: 30px;
+    text-align: center;
+    width: 25%;
+    height: 55%;
+    /* buer ude i kanterne */
+    border-radius: 10px;
+    background: #FFF;
+    top: 105%;
+    left: 25px;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.2s;
+}
+/* Opsætning af billedet inde i boksen */
+.img1 {
+    width: 50%;
+    height: 50%;
+    border-radius: 80%;
+}
+
+.box1:hover {
+    width: 28%;
+    height: 58%;
+}
+/* artist nr 2 udseende, samt position på siden */
+.box2{
+    position: absolute;
+    line-height: 30px;
+    text-align: center;
+    width: 25%;
+    height: 55%;
+    border-radius: 10px;
+    background: #FFF;
+    top: 125%;
+    padding: 10px;
+    font-size: 20px;
+    left: 37.5%;
+    transition: 0.2s;
+}
+/* Opsætning af billedet inde i boksen */
+.img2 {
+    width: 50%;
+    height: 50%;
+    border-radius: 80%;
+}
+
+.box2:hover {
+    width: 28%;
+    height: 58%;
+}
+/* artist nr 3 udseende, samt position på siden */
+.box3{
+    position: absolute;
+    line-height: 30px;
+    text-align: center;
+    width: 25%;
+    height: 55%;
+    border-radius: 10px;
+    background: #FFF;
+    top: 105%;
+    padding: 10px;
+    font-size: 20px;
+    right: 25px;
+    transition: 0.2s;
+}
+/* Opsætning af billedet inde i boksen */
+.img3 {
+    width: 50%;
+    height: 50%;
+    border-radius: 80%;
+}
+.box3:hover {
+    width: 28%;
+    height: 58%;
+}
+
+/* Opsætning af tekst "kendte artist*/
+.artist{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: #e9f900;
+    font-size: 40px;
+    top: 30px;
+    transition: 0.3s;
+} 
+
+.artist:hover {
+    -webkit-text-stroke: 2px #e9f900;
+    color: transparent; 
+    font-size: 45px;
+}
+/* Opsætning af tekst "nyhedsbrev" */
+.nyhedsbrev h1 {
+    color: #FFF;
+    position: relative;
+    line-height: 110px;
+    font-size: 110px;
+    text-align: center;
+    top: 600px;
+}
+/* Opsætning af tekst nyhedsbrev oplysniger */
+.nyhedsbrev p {
+    color: #FFF;
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    width: 150px;
+    height: 20px;
+    top: 189%;
+    left: 63%;
+}
+/* Opsætning af Email inputfelt*/
+.nyhedsbrev input {
+    position: absolute;
+    width: 35%;
+    height: 3%;
+    padding: 5px;
+    top: 215%;
+    left: 37%;
+}
+/* Opsætning af hvad man siger ja tak til */
+.kryds p {
+    position: absolute;
+    color: #FFF;
+    top:221%;
+    width: 37%;
+    left: 39%;
+    line-height: 20px;
+}
+/* Opsætning af radio */
+.kryds input {
+    position: absolute;
+    top: 222%;
+    left: 37%;
+}
+/* Opsætning af submit knappen "ok" */
+.kryds button {
+position: absolute;
+top: 215%;
+left: 73.2%;
+height: 4.8%;
+width: 4.5%;
+padding: 10px;
+}
+
+/* Linjen der adskiller siden og footer */
+hr {
+    border: 2px solid black;
+    position: relative;
+    margin-top: 51%;
+}
+
+/* Opsætning af indhold i fotter */
+footer {
+    position: absolute;
+    top: 230%;
+    left: 40%;
+    
+}
+footer ul li {
+    display: inline-block;
+    padding: 20px;
+   
+    
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    
+}

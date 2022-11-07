@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Refresh siden hver 120sek -->
+    <meta http-equiv="refresh" content="120">
+    <title>GenZ Festival</title>
+    <!-- Ekstern css fil der er angivet til "style.css" -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- svg tag hjælper med at lave symboler og tegn -->
+        <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+        </svg>
+    </div>
+    <header>
+        <!-- Logo -->
+        <a href="index.html">
+        <img src="materialer/Logo_GenZ1.png" alt="" class="logo">
+    </a>
+    <nav>
+        <ul>
+            <!-- Nav bar -->
+            <li><a href ="Artist.html">Artister</a></li>
+            <li><a href ="Om.html">Om os</a></li>
+            <li><a href ="Find.html">Find os</a></li>
+        </ul>
+    </nav>
+    <!-- baggrundsvideo på forreste side -->
+    <video src="materialer/endelig.mp4"  autoplay muted loop></video>
+</header>
+<!-- push button til knappen "billet" -->
+<form action="billet.html">
+    <button class="billet">Billet </button> 
+</form>
+
+<!-- første kasse med artist oplysninger -->
+<section class="artister">
+    <div class="box1">
+<img class="img1" src="Photo/Artist/Singer1.jpg"  alt="">
+<h1>Lasi </h1> <br>
+<p>Har et enestående øre for melodiske hooks og en veludviklet musikalsk radar, der henter inspiration fra både afrobeats, grime, salsa og tropisk pop.</p>
+</div>
+<!-- Anden kasse med artist oplysninger -->
+ <div class="box2">
+    <img class="img2" src="Photo/Artist/Singer2.jpg"  alt="">
+
+    <h1>Vihana</h1> <br>
+    <p>Vihana tilgang til at lave pop er eksperimenterende og konceptuel, er hendes øre for træfsikre melodier og omkvæd veludviklet.</p>
+</div>
+ 
+<!-- Tredje kasse med artist oplysninger -->
+    <div class="box3">
+
+        <img class="img3" src="Photo/Artist/Artist3.png"  alt="">
+    
+        <h1>Kim Varsen</h1> <br>
+        <p>56-årige Kim Varsen er en musikalsk hiphop-wunderkind, der som 15-årig deltog som den hidtil yngste finalist i den engelske udgave af dj-konkurrencen DMC World DJ Championship.</p>
+    </div>
+        </section> 
+        <!-- tekst der kan klikkes på,for at komme videre til artist.html -->
+        <a class="artist" href="Artist.html"><h1>Kendte artister</h1></a>
+        <!-- nyhedsbrevs article, hvor der er oplysninger samt et inputfelt -->
+        <form action="#">
+        <article class="nyhedsbrev">
+            <h1>Nyheds<br>brev</h1>
+            <p>Tilmeld dig vores nyhredsbrev og vær blandt de første til at høre nyheder fra billetsalg til programmet til gen-z Festival</p>
+            <input type="text" id="email" name="e-mail" placeholder="skriv din e-mail adresse">
+        </article>
+        <!-- Her er der også lidt informationer til, hvad man siger ja til, med et default sat ja tak, samt submit knappen "Ok" -->
+        <article class="kryds">
+        <p> 
+            Tilmeld dig vores nyhedsbrev og hold dig opdateret med 
+            nyheder, analyser, events og anvendelsesorienterede guides 
+            om Festivalen.</p>
+            <input type="radio" id="email1"  name="ja tak til nyhedsbrev" checked>
+            <button type="submit">OK</button>
+        </article>
+    </form>
+    <!-- Linjen der adskiller siden og footer -->
+    <hr>
+    <footer>
+        <ul>
+            <!-- Nederste side, med de 3 følgelings -->
+            <li><a href ="Om.html">Om os</a></li>
+            <li><a href ="billet.html">Book nu</a></li>
+            <li><a href ="Artist.html">Artister</a></li>
+        </ul>
+    </footer>
+    
+
+
+
+</body>
+</html>
+
+

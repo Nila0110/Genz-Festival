@@ -1,0 +1,60 @@
+/* Istandsætter at der skal være 0 margner, samt 0 padding og med et specifit font til hele siden */
+*{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-weight: normal;
+}
+/* baggrund */
+body {
+    color: #8616d5;
+    background-color: #4a4747;
+    background-image: url("Photo/ombackground.jpg");    
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+/* nav bar */
+.navbar ul{
+    text-align: center;   
+    position: fixed;
+    left: 480px; 
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.5s;
+
+}
+.navbar a:hover{
+    font-size: 30px;
+    color: #8616d5;
+
+
+}
+/* tekst "tidligere events..." */
+.center h1 {
+    margin-top: -15px;
+    color: #fff;
+}
+/* opsætning af videoen på siden */
+.center {
+    position: absolute;
+    text-align: center;
+    left: 23%;
+    top: 200px;
+   /* border:solid 10px; */
+   box-shadow: 5px 10px #8516d5d4; 
+    /*box-shadow: #8616d5 0px 6px 16px; */
+  }
